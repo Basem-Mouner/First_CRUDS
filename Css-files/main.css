@@ -1,0 +1,21 @@
+@font-face {
+    font-family: beso;
+    src: url(../webfonts/body-font/ShadowsIntoLight-Regular.ttf);
+}
+
+#addBtn:hover {
+    box-shadow: 0 0 10px rgb(2, 40, 81);
+    transform: scale(1.01);
+}
+
+.inner-Pruduct-Item img {
+    height: 150px;
+    object-fit: contain;
+}
+
+
+/* .item-img {
+    width: 25%;
+    float: left;
+    padding: 10px;
+} */

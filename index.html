@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+    <title>CURDS</title>
+    <!--  -->
+    <link rel="icon" href="">
+    <!-- all CSS hear -->
+    <!--Bootstrap  -->
+    <link rel="stylesheet" href="Css-files/bootstrap.min.css">
+    <!-- font awesome -->
+    <link rel="stylesheet" href="Css-files/all.min.css">
+    <!--media quary  -->
+    <link rel="stylesheet" href="Css-files/media.css">
+    <!--main style sheet  -->
+    <link rel="stylesheet" href="Css-files/main.css">
+
+    <meta charset="utf-8">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="keywords" content="web designer,developer web">
+</head>
+
+<body class="bg-l">
+    <header></header>
+    <main>
+        <section class=" crud container mt-5 bg-warning   p-5 rounded-5 ">
+
+            <h2 class="text-center text-primary "><span class="fs-1 ">C</span>URDS SYSTEM</h2>
+            <h4 class="text-center text-black">Project Mangment System</h4>
+
+            <form>
+                <div class="form-floating mb-3 mt-4 ">
+                    <input type="text" oninput="validateInputs(this)" class="form-control " value="" id="productName" placeholder="product Name">
+                    <div class="alert bg-danger p-1 mt-1 d-none">
+                        <small>enter 6 ch</small></div>
+                    <label for="productName">product  Name</label>
+                </div>
+                <div class="form-floating mb-3 ">
+                    <input type="number" oninput="validateInputs(this)" class="form-control" value="" id="productPrice" placeholder="product Price">
+                    <div class="alert bg-danger p-1 mt-1 d-none">
+                        <small>enter 6 ch</small></div>
+                    <label for="productPrice">product price</label>
+                </div>
+                <div class="form-floating mb-3 ">
+                    <input type="text" oninput="validateInputs(this)" class="form-control" list="productCategory-L" id="productCategory" placeholder="product category">
+                    <div class="alert bg-danger p-1 mt-1 d-none">
+                        <small>enter 6 ch</small></div>
+                    <label for="productCategory">product category</label>
+                    <datalist id="productCategory-L">
+                    <option value="mobile">
+                           <option value="tv">
+                        <option value="laptop">
+                            <option value="screen">
+                </datalist>
+                </div>
+                <div class="form-floating mb-3  ">
+                    <input type="text" oninput="validateInputs(this)" class="form-control" value="" id="productdes" placeholder="produc Description">
+                    <div class="alert bg-danger p-1 mt-1 d-none">
+                        <small>enter 6 ch</small></div>
+                    <label for="productdes">product Description</label>
+                </div>
+                <div class="form-floating mb-3 ">
+                    <input type="file" class="form-control" accept="image/*" id="productImg" placeholder="product img">
+                    <label for="productImg">product img</label>
+                </div>
+                <div class="product-button text-center   ">
+                    <button id='addBtn' class="btn bg-info  px-3 py-1 ">Add Product</button>
+                </div>
+            </form>
+            <button class="btn btn-outline-danger px-3 py-1 ">Reset</button>
+
+            <div class="container m-4 ">
+                <input type="text" oninput="searchProduct()" class="form-control w-50 m-auto my-5" value="" id="SearchProduct" placeholder="Search Product">
+                <div class="row g-4" id="productFormItems">
+
+
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer></footer>
+    <!-- -------------------------------------------------------------------------------------- -->
+
+    <!-- js part -->
+    <script src="js-files/index.js ">
+    </script>
+    <script src="js-files/bs/bootstrap.bundle.js ">
+    </script>
+
+</body>
+
+</html>
+
+</html>
